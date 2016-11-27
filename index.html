@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" class="mdl-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Toronto Bike Data</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+  </head>
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div id="app" class="mdl-layout__container has-scrolling-header">
+      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+          <div class="mdl-layout__header-row mdl-color--primary">
+            <span class="mdl-layout-title">Toronto Bike Data</span>
+            <div class="mdl-layout-spacer"></div>
+            <nav class="mdl-navigation">
+              <router-link class="mdl-navigation__link" to="/">Home</router-link>
+              <router-link class="mdl-navigation__link" to="/data">Data</router-link>
+              <router-link class="mdl-navigation__link" to="/map">Map</router-link>
+            </nav>
+          </div>
+        </header>
+        <main>
+          <router-view></router-view>
+        </main>
+      </div>
+    </div>
+    <!-- built files will be auto injected -->
+    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+  </body>
+</html>
