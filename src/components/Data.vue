@@ -1,33 +1,11 @@
 <template>
-<div class="row center-items">
-  <div v-for="bike in bikes" class="col-xs-12">
-    <h6>Intersection: {{bike.intersection | capitalize}}</h6>
-    <div class="row">
-      <div>
-        <table class="mdl-data-table mdl-js-data-table mdl-data-table mdl-shadow--2dp">
-          <thead>
-            <tr>
-              <th class="mdl-data-table__cell--non-numeric">Day</th>
-              <th class="mdl-data-table__cell--non-numeric">Date</th>
-              <th>Cyclists</th>
-              <th class="mdl-data-table__cell--non-numeric">Time</th>
-              <th>Temperature</th>
-              <th class="mdl-data-table__cell--non-numeric">Weather Details</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr v-for="data in bike.bike_data">
-              <td class="mdl-data-table__cell--non-numeric">{{data.day}}</td>
-              <td class="mdl-data-table__cell--non-numeric">{{data.date}}</td>
-              <td>{{data.cyclists}}</td>
-              <td class="mdl-data-table__cell--non-numeric">{{data.time}}</td>
-              <td>{{data.temperature}}</td>
-              <td class="mdl-data-table__cell--non-numeric">{{data.details}}</td>
-            </tr>
-          </tbody>
-        </table>
+  <div>
+    <div v-for="(bike, index) in bikes" class="row">
+      <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8">
+        <h6>Intersection: {{bike.intersection | capitalize}}</h6>
+        <chart :bike-data="bike.bike_data"></chart>
       </div>
-      <div class="bar">
+      <div class="col-xs-6 col-sm-3 col-md-2 col-lg-1">
         <mdl-button id="menu-example-2" icon>
           <i class="material-icons">more_vert</i>
         </mdl-button>
@@ -39,22 +17,37 @@
       </div>
     </div>
   </div>
-</div>
+    <!--<div v-for="bike in bikes" class="col-xs">
+      <h6>Intersection: {{bike.intersection | capitalize}}</h6>
+      <div class="row">
+        <div class="bar">
+          <mdl-button id="menu-example-2" icon>
+            <i class="material-icons">more_vert</i>
+          </mdl-button>
+          <mdl-menu for="menu-example-2">
+            <mdl-menu-item>Option 1</mdl-menu-item>
+            <mdl-menu-item disabled="disabled">Disabled Action</mdl-menu-item>
+            <mdl-menu-item>Other Action</mdl-menu-item>
+          </mdl-menu>
+        </div>
+        <div id="example-1">
+          <button v-on:click="makeChart()">Add 1</button>
+        </div>
+      </div>
+    </div>-->
 </template>
 
 <script>
+import Chart from 'src/components/Chart.vue' // Chart component
+
 export default {
-  name: 'Test',
+  name: 'Data',
+  components: {
+    Chart
+  },
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App',
-      loadInfo: 'You loaded this page on ' + new Date(),
-      btnMessage: 'testing the button',
-      url: 'http://www.ign.com',
-      firstName: 'Jordan',
-      lastName: 'Turner',
-      bikes: {},
-      formatedBikes: {}
+      bikes: {}
     }
   },
   created: function () {
@@ -94,7 +87,7 @@ export default {
           console.log(error)
         })
     },
-    arrToObj: function (data) {
+    arrToObj: function (data, callback) {
       var rv = {}
       for (var i = 0; i < data.length; ++i) {
         rv[i] = data[i]
