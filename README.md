@@ -13,6 +13,10 @@ There is a backend to this project that can be found here: https://github.com/Ja
 
 If you have any questions or feedback feel free to reachout to me at jordanturnergo@gmail.com
 
+## Data Visualization
+Started to implement native D3 and native Chartlist into the project.
+This build currently has a static set of data being loaded into a D3 (latest version) line chart
+The goal is to get a static set of intersection data into a D3 line chart and a Chartlist line chart so that a gh-pages branch can be made and used a demo page.
 
 ## Build Setup
 
