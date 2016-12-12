@@ -10,27 +10,298 @@ export default {
   data () {
     return {
       bike_data: this.bikeData,
-      data: [{
-        'creat_time': '2013-03-12 15:09:04',
-        'record_status': 'ok',
-        'roundTripTime': '16'
-      }, {
-        'creat_time': '2013-03-12 14:59:06',
-        'record_status': 'ok',
-        'roundTripTime': '0'
-      }, {
-        'creat_time': '2013-03-12 14:49:04',
-        'record_status': 'ok',
-        'roundTripTime': '297'
-      }, {
-        'creat_time': '2013-03-12 14:39:06',
-        'record_status': 'ok',
-        'roundTripTime': '31'
-      }, {
-        'creat_time': '2013-03-12 14:29:03',
-        'record_status': 'ok',
-        'roundTripTime': '0'
-      }]
+      bikeSampleData: [
+        {
+          'timestamp': '00:00:00',
+          'cyclists': '5',
+          'weather': '27',
+          'weather_details': 'no rain',
+          'date': '2014-08-01'
+        }, {
+          'timestamp': '01:00:00',
+          'cyclists': '3',
+          'weather': '27',
+          'weather_details': 'no rain',
+          'date': '2014-08-01'
+        }, {
+          'timestamp': '02:00:00',
+          'cyclists': '5',
+          'weather': '27',
+          'weather_details': 'no rain',
+          'date': '2014-08-01'
+        }, {
+          'timestamp': '03:00:00',
+          'cyclists': '1',
+          'weather': '27',
+          'weather_details': 'no rain',
+          'date': '2014-08-01'
+        }, {
+          'timestamp': '04:00:00',
+          'cyclists': '4',
+          'weather': '27',
+          'weather_details': 'no rain',
+          'date': '2014-08-01'
+        }, {
+          'timestamp': '05:00:00',
+          'cyclists': '7',
+          'weather': '27',
+          'weather_details': 'no rain',
+          'date': '2014-08-01'
+        }, {
+          'timestamp': '06:00:00',
+          'cyclists': '19',
+          'weather': '27',
+          'weather_details': 'no rain',
+          'date': '2014-08-01'
+        }, {
+          'timestamp': '07:00:00',
+          'cyclists': '67',
+          'weather': '27',
+          'weather_details': 'no rain',
+          'date': '2014-08-01'
+        }, {
+          'timestamp': '08:00:00',
+          'cyclists': '250',
+          'weather': '27',
+          'weather_details': 'no rain',
+          'date': '2014-08-01'
+        }, {
+          'timestamp': '09:00:00',
+          'cyclists': '226',
+          'weather': '27',
+          'weather_details': 'no rain',
+          'date': '2014-08-01'
+        }, {
+          'timestamp': '10:00:00',
+          'cyclists': '89',
+          'weather': '27',
+          'weather_details': 'no rain',
+          'date': '2014-08-01'
+        }, {
+          'timestamp': '11:00:00',
+          'cyclists': '67',
+          'weather': '27',
+          'weather_details': 'no rain',
+          'date': '2014-08-01'
+        }, {
+          'timestamp': '12:00:00',
+          'cyclists': '71',
+          'weather': '27',
+          'weather_details': 'no rain',
+          'date': '2014-08-01'
+        }, {
+          'timestamp': '13:00:00',
+          'cyclists': '71',
+          'weather': '27',
+          'weather_details': 'no rain',
+          'date': '2014-08-01'
+        }, {
+          'timestamp': '14:00:00',
+          'cyclists': '77',
+          'weather': '27',
+          'weather_details': 'no rain',
+          'date': '2014-08-01'
+        }, {
+          'timestamp': '15:00:00',
+          'cyclists': '59',
+          'weather': '27',
+          'weather_details': 'no rain',
+          'date': '2014-08-01'
+        }, {
+          'timestamp': '16:00:00',
+          'cyclists': '62',
+          'weather': '27',
+          'weather_details': 'no rain',
+          'date': '2014-08-01'
+        }, {
+          'timestamp': '17:00:00',
+          'cyclists': '60',
+          'weather': '27',
+          'weather_details': 'no rain',
+          'date': '2014-08-01'
+        }, {
+          'timestamp': '18:00:00',
+          'cyclists': '44',
+          'weather': '27',
+          'weather_details': 'no rain',
+          'date': '2014-08-01'
+        }, {
+          'timestamp': '19:00:00',
+          'cyclists': '41',
+          'weather': '27',
+          'weather_details': 'no rain',
+          'date': '2014-08-01'
+        }, {
+          'timestamp': '20:00:00',
+          'cyclists': '15',
+          'weather': '27',
+          'weather_details': 'no rain',
+          'date': '2014-08-01'
+        }, {
+          'timestamp': '21:00:00',
+          'cyclists': '30',
+          'weather': '27',
+          'weather_details': 'no rain',
+          'date': '2014-08-01'
+        }, {
+          'timestamp': '22:00:00',
+          'cyclists': '15',
+          'weather': '27',
+          'weather_details': 'no rain',
+          'date': '2014-08-01'
+        }, {
+          'timestamp': '23:00:00',
+          'cyclists': '16',
+          'weather': '27',
+          'weather_details': 'no rain',
+          'date': '2014-08-01'
+        },
+        {
+          'timestamp': '00:00:00',
+          'cyclists': '14',
+          'weather': '26',
+          'weather_details': 'no rain',
+          'date': '2014-08-02'
+        }, {
+          'timestamp': '01:00:00',
+          'cyclists': '12',
+          'weather': '26',
+          'weather_details': 'no rain',
+          'date': '2014-08-02'
+        }, {
+          'timestamp': '02:00:00',
+          'cyclists': '3',
+          'weather': '26',
+          'weather_details': 'no rain',
+          'date': '2014-08-02'
+        }, {
+          'timestamp': '03:00:00',
+          'cyclists': '6',
+          'weather': '26',
+          'weather_details': 'no rain',
+          'date': '2014-08-02'
+        }, {
+          'timestamp': '04:00:00',
+          'cyclists': '3',
+          'weather': '26',
+          'weather_details': 'no rain',
+          'date': '2014-08-02'
+        }, {
+          'timestamp': '05:00:00',
+          'cyclists': '3',
+          'weather': '26',
+          'weather_details': 'no rain',
+          'date': '2014-08-02'
+        }, {
+          'timestamp': '06:00:00',
+          'cyclists': '5',
+          'weather': '26',
+          'weather_details': 'no rain',
+          'date': '2014-08-02'
+        }, {
+          'timestamp': '07:00:00',
+          'cyclists': '11',
+          'weather': '26',
+          'weather_details': 'no rain',
+          'date': '2014-08-02'
+        }, {
+          'timestamp': '08:00:00',
+          'cyclists': '20',
+          'weather': '26',
+          'weather_details': 'no rain',
+          'date': '2014-08-02'
+        }, {
+          'timestamp': '09:00:00',
+          'cyclists': '38',
+          'weather': '26',
+          'weather_details': 'no rain',
+          'date': '2014-08-02'
+        }, {
+          'timestamp': '10:00:00',
+          'cyclists': '39',
+          'weather': '26',
+          'weather_details': 'no rain',
+          'date': '2014-08-02'
+        }, {
+          'timestamp': '11:00:00',
+          'cyclists': '45',
+          'weather': '26',
+          'weather_details': 'no rain',
+          'date': '2014-08-02'
+        }, {
+          'timestamp': '12:00:00',
+          'cyclists': '44',
+          'weather': '26',
+          'weather_details': 'no rain',
+          'date': '2014-08-02'
+        }, {
+          'timestamp': '13:00:00',
+          'cyclists': '51',
+          'weather': '26',
+          'weather_details': 'no rain',
+          'date': '2014-08-02'
+        }, {
+          'timestamp': '14:00:00',
+          'cyclists': '70',
+          'weather': '26',
+          'weather_details': 'no rain',
+          'date': '2014-08-02'
+        }, {
+          'timestamp': '15:00:00',
+          'cyclists': '66',
+          'weather': '26',
+          'weather_details': 'no rain',
+          'date': '2014-08-02'
+        }, {
+          'timestamp': '16:00:00',
+          'cyclists': '64',
+          'weather': '26',
+          'weather_details': 'no rain',
+          'date': '2014-08-02'
+        }, {
+          'timestamp': '17:00:00',
+          'cyclists': '49',
+          'weather': '26',
+          'weather_details': 'no rain',
+          'date': '2014-08-02'
+        }, {
+          'timestamp': '18:00:00',
+          'cyclists': '56',
+          'weather': '26',
+          'weather_details': 'no rain',
+          'date': '2014-08-02'
+        }, {
+          'timestamp': '19:00:00',
+          'cyclists': '35',
+          'weather': '26',
+          'weather_details': 'no rain',
+          'date': '2014-08-02'
+        }, {
+          'timestamp': '20:00:00',
+          'cyclists': '16',
+          'weather': '26',
+          'weather_details': 'no rain',
+          'date': '2014-08-02'
+        }, {
+          'timestamp': '21:00:00',
+          'cyclists': '24',
+          'weather': '26',
+          'weather_details': 'no rain',
+          'date': '2014-08-02'
+        }, {
+          'timestamp': '22:00:00',
+          'cyclists': '14',
+          'weather': '26',
+          'weather_details': 'no rain',
+          'date': '2014-08-02'
+        }, {
+          'timestamp': '23:00:00',
+          'cyclists': '11',
+          'weather': '26',
+          'weather_details': 'no rain',
+          'date': '2014-08-02'
+        }
+      ]
     }
   },
   mounted () {
@@ -42,75 +313,85 @@ export default {
     },
     makeChart: function () {
       console.log(window.d3)
-      var margin = {top: 20, right: 20, bottom: 30, left: 50}
+      var d3 = window.d3
+      // Set the dimensions of the canvas / graph
+      var margin = {top: 30, right: 20, bottom: 70, left: 50}
       var width = 960 - margin.left - margin.right
       var height = 500 - margin.top - margin.bottom
-      var parseDate = window.d3.timeParse('%Y-%m-%d %H:%M:%S')
-      var x = window.d3.scaleTime()
-        .range([0, width])
 
-      var y = window.d3.scaleLinear()
-        .range([height, 0])
+      // Parse the date / time
+      var parseDate = d3.timeParse('%H:%M:%S')
 
-      var xAxis = window.d3.axisBottom()
-        .scale(x)
-        .tickFormat(window.d3.timeFormat('%H:%m'))
+      // Set the ranges
+      var x = d3.scaleTime().range([0, width])
+      var y = d3.scaleLinear().range([height, 0])
 
-      var yAxis = window.d3.axisLeft()
-        .scale(y)
+      // Define the line
+      var priceline = d3.line()
+          .x(function (d) { return x(d.timestamp) })
+          .y(function (d) { return y(d.cyclists) })
 
-      var line = window.d3.line()
-        .x(function (d) { return x(d.creat_time) })
-        .y(function (d) { return y(d.roundTripTime) })
+      // Adds the svg canvas
+      var svg = d3.select('#visualization')
+          .append('svg')
+              .attr('width', width + margin.left + margin.right)
+              .attr('height', height + margin.top + margin.bottom)
+          .append('g')
+              .attr('transform',
+                    'translate(' + margin.left + ',' + margin.top + ')')
 
-      var svg = window.d3.select('svg')
-        .attr('width', width + margin.left + margin.right)
-        .attr('height', height + margin.top + margin.bottom)
-      .append('g')
-        .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
-
-      this.data.forEach(function (d) {
-        d.creat_time = parseDate(d.creat_time)
-        d.roundTripTime = +d.roundTripTime
+      this.bikeSampleData.forEach(function (d) {
+        d.timestamp = parseDate(d.timestamp)
+        d.cyclists = +d.cyclists
       })
 
-      x.domain(window.d3.extent(this.data, function (d) { return d.creat_time }))
-      y.domain(window.d3.extent(this.data, function (d) { return d.roundTripTime }))
+      // Scale the range of the data
+      x.domain(d3.extent(this.bikeSampleData, function (d) { return d.timestamp }))
+      y.domain([0, d3.max(this.bikeSampleData, function (d) { return d.cyclists })])
 
+      // Nest the entries by symbol
+      var dataNest = d3.nest()
+          .key(function (d) { return d.date })
+          .entries(this.bikeSampleData)
+
+      // set the colour scale
+      var color = d3.scaleOrdinal(d3.schemeCategory10)
+
+      var legendSpace = width / dataNest.length // spacing for the legend
+
+      // Loop through each symbol / key
+      dataNest.forEach(function (d, i) {
+        svg.append('path')
+            .attr('class', 'line')
+            .style('stroke', function () { // Add the colours dynamically
+              d.color = color(d.key)
+              return d.color
+            })
+            .style('fill', 'none')
+            .attr('d', priceline(d.values))
+
+        // Add the Legend
+        svg.append('text')
+            .attr('x', (legendSpace / 2) + i * legendSpace)  // space legend
+            .attr('y', height + (margin.bottom / 2) + 5)
+            .attr('class', 'legend')    // style the legend
+            .style('fill', function () { // Add the colours dynamically
+              d.color = color(d.key)
+              return d.color
+            })
+            .text(d.key)
+      })
+
+      // Add the X Axis
       svg.append('g')
-          .attr('class', 'x axis')
+          .attr('class', 'axis')
           .attr('transform', 'translate(0,' + height + ')')
-          .call(xAxis)
+          .call(d3.axisBottom(x).tickFormat(d3.timeFormat('%H:%m')))
 
+      // Add the Y Axis
       svg.append('g')
-          .attr('class', 'y axis')
-          .call(yAxis)
-          .append('text')
-          .attr('transform', 'rotate(-90)')
-          .attr('y', 6)
-          .attr('dy', '.71em')
-          .style('text-anchor', 'end')
-          .text('return time(ms)')
-
-      svg.append('path')
-          .datum(this.data)
-          .attr('class', 'line')
-           .style('fill', 'none')
-      .style('stroke', 'blue')
-          .attr('d', line)
-      /* new window.Chartist.Line('.chart', {
-        labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-        series: [
-          [12, 9, 7, 8, 5],
-          [2, 1, 3.5, 7, 3],
-          [1, 3, 4, 5, 6]
-        ]
-      }, {
-        fullWidth: true,
-        chartPadding: {
-          right: 40
-        }
-      }) */
+          .attr('class', 'axis')
+          .call(d3.axisLeft(y))
     }
   }
 }
@@ -118,6 +399,14 @@ export default {
 <style scoped>
   #visualization {
     height: 500px;
-    width: 100%;
+    width: 960px;
+  }
+  .axis path {
+      fill: none;
+      stroke: #777;
+      shape-rendering: crispEdges;
+  }
+  .axis text {
+      font-size: 13px;
   }
 </style>
