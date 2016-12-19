@@ -6,10 +6,9 @@
 <script>
 export default {
   name: 'chart',
-  props: ['bikeData'],
+  // props: ['bikeData'],
   data () {
     return {
-      bike_data: this.bikeData,
       bikeSampleData: [
         {
           'timestamp': '00:00:00',
