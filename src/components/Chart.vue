@@ -314,20 +314,26 @@ export default {
     makeChart: function () {
       console.log(window.d3)
       var d3 = window.d3
+
       // Set the dimensions of the canvas / graph
       var margin = {top: 30, right: 20, bottom: 70, left: 50}
       var width = 960 - margin.left - margin.right
       var height = 500 - margin.top - margin.bottom
 
-      // Parse the date / time
-      var parseDate = d3.timeParse('%H:%M:%S')
+      var legendSpacing = 25 // Used to apply spacing between each legen entry
+      var legendX = 0 // Set the x value of the legend
+
+      let legend = null // Initialize the legend
+
+      let parseDate = d3.timeParse('%H:%M:%S') // Parse the date / time
+      let formatDate = d3.timeFormat('%A, %B %-d, %Y')
 
       // Set the ranges
-      var x = d3.scaleTime().range([0, width])
-      var y = d3.scaleLinear().range([height, 0])
+      let x = d3.scaleTime().range([0, width])
+      let y = d3.scaleLinear().range([height, 0])
 
       // Define the line
-      var priceline = d3.line()
+      var cyclistsLine = d3.line()
           .x(function (d) { return x(d.timestamp) })
           .y(function (d) { return y(d.cyclists) })
 
@@ -357,8 +363,6 @@ export default {
       // set the colour scale
       var color = d3.scaleOrdinal(d3.schemeCategory10)
 
-      var legendSpace = width / dataNest.length // spacing for the legend
-
       // Loop through each symbol / key
       dataNest.forEach(function (d, i) {
         svg.append('path')
@@ -368,30 +372,73 @@ export default {
               return d.color
             })
             .style('fill', 'none')
-            .attr('d', priceline(d.values))
+            .attr('d', cyclistsLine(d.values))
 
-        // Add the Legend
-        svg.append('text')
-            .attr('x', (legendSpace / 2) + i * legendSpace)  // space legend
-            .attr('y', height + (margin.bottom / 2) + 5)
-            .attr('class', 'legend')    // style the legend
-            .style('fill', function () { // Add the colours dynamically
-              d.color = color(d.key)
-              return d.color
-            })
-            .text(d.key)
+        var y = i * legendSpacing // Set the Y value of the legend for each data set
+
+        var legendDate = new Date(d.key)
+        legendDate.setDate(legendDate.getDate() + 1)
+
+        legend = svg.append('g')
+           .attr('class', 'legend')
+           .attr('transform', 'translate(' + legendX + ',' + y + ')')
+
+        legend.append('rect')
+          .attr('x', width - 18)
+          .attr('y', 18)
+          .attr('width', 18)
+          .attr('height', 18)
+          .style('fill', d.color)
+
+        legend.append('text')
+          .style('font', '14px Roboto')
+          .attr('x', width - 24)
+          .attr('y', 25)
+          .attr('dy', '.35em')
+          .style('text-anchor', 'end')
+          .text(formatDate(legendDate))
       })
 
       // Add the X Axis
       svg.append('g')
           .attr('class', 'axis')
           .attr('transform', 'translate(0,' + height + ')')
-          .call(d3.axisBottom(x).tickFormat(d3.timeFormat('%H:%m')))
+          .style('font', '11px Roboto')
+          .call(d3.axisBottom(x).ticks(d3.timeHour, 1).tickFormat(d3.timeFormat('%-I %p')))
+
+      // text label for the x axis
+      svg.append('text')
+          .attr('transform',
+                'translate(' + (width / 2) + ' ,' +
+                               (height + margin.top + 20) + ')')
+          .style('text-anchor', 'middle')
+          .style('font', '16px Roboto')
+          .text('Time Range')
 
       // Add the Y Axis
       svg.append('g')
           .attr('class', 'axis')
+          .style('font', '11px Roboto')
           .call(d3.axisLeft(y))
+
+      // text label for the y axis
+      svg.append('text')
+          .attr('transform', 'rotate(-90)')
+          .attr('y', 0 - margin.left)
+          .attr('x', 0 - (height / 2))
+          .attr('dy', '1em')
+          .style('font', '16px Roboto')
+          .style('text-anchor', 'middle')
+          .text('Cyclists')
+
+      // Add title to graph
+      svg.append('text')
+        .attr('x', (width / 2))
+        .attr('y', 0 - (margin.top / 2))
+        .attr('text-anchor', 'middle')
+        .style('font', ' 16px Roboto')
+        .style('text-decoration', 'underline')
+        .text('Cyclists vs Time')
     }
   }
 }
@@ -408,5 +455,8 @@ export default {
   }
   .axis text {
       font-size: 13px;
+  }
+  .legend {
+    font-size: 12px;
   }
 </style>
