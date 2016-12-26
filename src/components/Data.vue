@@ -5,41 +5,7 @@
         <chart></chart>
       </div>
     </div>
-    <!--<div v-for="(bike, index) in bikes" class="row">
-      <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8">
-        <h6>Intersection: {{bike.intersection | capitalize}}</h6>
-        <chart :bike-data="bike.bike_data"></chart>
-      </div>
-      <div class="col-xs-6 col-sm-3 col-md-2 col-lg-1">
-        <mdl-button id="menu-example-2" icon>
-          <i class="material-icons">more_vert</i>
-        </mdl-button>
-        <mdl-menu for="menu-example-2">
-          <mdl-menu-item>Option 1</mdl-menu-item>
-          <mdl-menu-item disabled="disabled">Disabled Action</mdl-menu-item>
-          <mdl-menu-item>Other Action</mdl-menu-item>
-        </mdl-menu>
-      </div>
-    </div>-->
   </div>
-    <!--<div v-for="bike in bikes" class="col-xs">
-      <h6>Intersection: {{bike.intersection | capitalize}}</h6>
-      <div class="row">
-        <div class="bar">
-          <mdl-button id="menu-example-2" icon>
-            <i class="material-icons">more_vert</i>
-          </mdl-button>
-          <mdl-menu for="menu-example-2">
-            <mdl-menu-item>Option 1</mdl-menu-item>
-            <mdl-menu-item disabled="disabled">Disabled Action</mdl-menu-item>
-            <mdl-menu-item>Other Action</mdl-menu-item>
-          </mdl-menu>
-        </div>
-        <div id="example-1">
-          <button v-on:click="makeChart()">Add 1</button>
-        </div>
-      </div>
-    </div>-->
 </template>
 
 <script>
