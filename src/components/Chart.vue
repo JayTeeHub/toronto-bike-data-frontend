@@ -437,7 +437,7 @@ export default {
         .attr('text-anchor', 'middle')
         .style('font', ' 16px Roboto')
         .style('text-decoration', 'underline')
-        .text('Cyclists vs Time')
+        .text('Cyclists vs Time -- Adelaide & Brant')
     }
   }
 }
