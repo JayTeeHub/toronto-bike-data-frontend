@@ -2,7 +2,7 @@
   <div>
     <div>
       <div class="col-xs-12 col-sm-10 col-md-8 col-lg-8">
-        <chart></chart>
+        <chart :bike-data="bikes"></chart>
       </div>
     </div>
   </div>
@@ -22,6 +22,7 @@ export default {
     }
   },
   created: function () {
+    this.bikes = require('src/assets/sample_data/toronto_bike_data.json')
     // this.getAllBikes()
   },
   filters: {

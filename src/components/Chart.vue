@@ -6,295 +6,295 @@
 <script>
 export default {
   name: 'chart',
-  // props: ['bikeData'],
+  props: ['bikeData'],
   data () {
     return {
       bikeSampleData: [
         {
-          'timestamp': '00:00:00',
+          'timeline': '00:00:00',
           'cyclists': '5',
           'weather': '27',
           'weather_details': 'no rain',
           'date': '2014-08-01'
         }, {
-          'timestamp': '01:00:00',
+          'timeline': '01:00:00',
           'cyclists': '3',
           'weather': '27',
           'weather_details': 'no rain',
           'date': '2014-08-01'
         }, {
-          'timestamp': '02:00:00',
+          'timeline': '02:00:00',
           'cyclists': '5',
           'weather': '27',
           'weather_details': 'no rain',
           'date': '2014-08-01'
         }, {
-          'timestamp': '03:00:00',
+          'timeline': '03:00:00',
           'cyclists': '1',
           'weather': '27',
           'weather_details': 'no rain',
           'date': '2014-08-01'
         }, {
-          'timestamp': '04:00:00',
+          'timeline': '04:00:00',
           'cyclists': '4',
           'weather': '27',
           'weather_details': 'no rain',
           'date': '2014-08-01'
         }, {
-          'timestamp': '05:00:00',
+          'timeline': '05:00:00',
           'cyclists': '7',
           'weather': '27',
           'weather_details': 'no rain',
           'date': '2014-08-01'
         }, {
-          'timestamp': '06:00:00',
+          'timeline': '06:00:00',
           'cyclists': '19',
           'weather': '27',
           'weather_details': 'no rain',
           'date': '2014-08-01'
         }, {
-          'timestamp': '07:00:00',
+          'timeline': '07:00:00',
           'cyclists': '67',
           'weather': '27',
           'weather_details': 'no rain',
           'date': '2014-08-01'
         }, {
-          'timestamp': '08:00:00',
+          'timeline': '08:00:00',
           'cyclists': '250',
           'weather': '27',
           'weather_details': 'no rain',
           'date': '2014-08-01'
         }, {
-          'timestamp': '09:00:00',
+          'timeline': '09:00:00',
           'cyclists': '226',
           'weather': '27',
           'weather_details': 'no rain',
           'date': '2014-08-01'
         }, {
-          'timestamp': '10:00:00',
+          'timeline': '10:00:00',
           'cyclists': '89',
           'weather': '27',
           'weather_details': 'no rain',
           'date': '2014-08-01'
         }, {
-          'timestamp': '11:00:00',
+          'timeline': '11:00:00',
           'cyclists': '67',
           'weather': '27',
           'weather_details': 'no rain',
           'date': '2014-08-01'
         }, {
-          'timestamp': '12:00:00',
+          'timeline': '12:00:00',
           'cyclists': '71',
           'weather': '27',
           'weather_details': 'no rain',
           'date': '2014-08-01'
         }, {
-          'timestamp': '13:00:00',
+          'timeline': '13:00:00',
           'cyclists': '71',
           'weather': '27',
           'weather_details': 'no rain',
           'date': '2014-08-01'
         }, {
-          'timestamp': '14:00:00',
+          'timeline': '14:00:00',
           'cyclists': '77',
           'weather': '27',
           'weather_details': 'no rain',
           'date': '2014-08-01'
         }, {
-          'timestamp': '15:00:00',
+          'timeline': '15:00:00',
           'cyclists': '59',
           'weather': '27',
           'weather_details': 'no rain',
           'date': '2014-08-01'
         }, {
-          'timestamp': '16:00:00',
+          'timeline': '16:00:00',
           'cyclists': '62',
           'weather': '27',
           'weather_details': 'no rain',
           'date': '2014-08-01'
         }, {
-          'timestamp': '17:00:00',
+          'timeline': '17:00:00',
           'cyclists': '60',
           'weather': '27',
           'weather_details': 'no rain',
           'date': '2014-08-01'
         }, {
-          'timestamp': '18:00:00',
+          'timeline': '18:00:00',
           'cyclists': '44',
           'weather': '27',
           'weather_details': 'no rain',
           'date': '2014-08-01'
         }, {
-          'timestamp': '19:00:00',
+          'timeline': '19:00:00',
           'cyclists': '41',
           'weather': '27',
           'weather_details': 'no rain',
           'date': '2014-08-01'
         }, {
-          'timestamp': '20:00:00',
+          'timeline': '20:00:00',
           'cyclists': '15',
           'weather': '27',
           'weather_details': 'no rain',
           'date': '2014-08-01'
         }, {
-          'timestamp': '21:00:00',
+          'timeline': '21:00:00',
           'cyclists': '30',
           'weather': '27',
           'weather_details': 'no rain',
           'date': '2014-08-01'
         }, {
-          'timestamp': '22:00:00',
+          'timeline': '22:00:00',
           'cyclists': '15',
           'weather': '27',
           'weather_details': 'no rain',
           'date': '2014-08-01'
         }, {
-          'timestamp': '23:00:00',
+          'timeline': '23:00:00',
           'cyclists': '16',
           'weather': '27',
           'weather_details': 'no rain',
           'date': '2014-08-01'
         },
         {
-          'timestamp': '00:00:00',
+          'timeline': '00:00:00',
           'cyclists': '14',
           'weather': '26',
           'weather_details': 'no rain',
           'date': '2014-08-02'
         }, {
-          'timestamp': '01:00:00',
+          'timeline': '01:00:00',
           'cyclists': '12',
           'weather': '26',
           'weather_details': 'no rain',
           'date': '2014-08-02'
         }, {
-          'timestamp': '02:00:00',
+          'timeline': '02:00:00',
           'cyclists': '3',
           'weather': '26',
           'weather_details': 'no rain',
           'date': '2014-08-02'
         }, {
-          'timestamp': '03:00:00',
+          'timeline': '03:00:00',
           'cyclists': '6',
           'weather': '26',
           'weather_details': 'no rain',
           'date': '2014-08-02'
         }, {
-          'timestamp': '04:00:00',
+          'timeline': '04:00:00',
           'cyclists': '3',
           'weather': '26',
           'weather_details': 'no rain',
           'date': '2014-08-02'
         }, {
-          'timestamp': '05:00:00',
+          'timeline': '05:00:00',
           'cyclists': '3',
           'weather': '26',
           'weather_details': 'no rain',
           'date': '2014-08-02'
         }, {
-          'timestamp': '06:00:00',
+          'timeline': '06:00:00',
           'cyclists': '5',
           'weather': '26',
           'weather_details': 'no rain',
           'date': '2014-08-02'
         }, {
-          'timestamp': '07:00:00',
+          'timeline': '07:00:00',
           'cyclists': '11',
           'weather': '26',
           'weather_details': 'no rain',
           'date': '2014-08-02'
         }, {
-          'timestamp': '08:00:00',
+          'timeline': '08:00:00',
           'cyclists': '20',
           'weather': '26',
           'weather_details': 'no rain',
           'date': '2014-08-02'
         }, {
-          'timestamp': '09:00:00',
+          'timeline': '09:00:00',
           'cyclists': '38',
           'weather': '26',
           'weather_details': 'no rain',
           'date': '2014-08-02'
         }, {
-          'timestamp': '10:00:00',
+          'timeline': '10:00:00',
           'cyclists': '39',
           'weather': '26',
           'weather_details': 'no rain',
           'date': '2014-08-02'
         }, {
-          'timestamp': '11:00:00',
+          'timeline': '11:00:00',
           'cyclists': '45',
           'weather': '26',
           'weather_details': 'no rain',
           'date': '2014-08-02'
         }, {
-          'timestamp': '12:00:00',
+          'timeline': '12:00:00',
           'cyclists': '44',
           'weather': '26',
           'weather_details': 'no rain',
           'date': '2014-08-02'
         }, {
-          'timestamp': '13:00:00',
+          'timeline': '13:00:00',
           'cyclists': '51',
           'weather': '26',
           'weather_details': 'no rain',
           'date': '2014-08-02'
         }, {
-          'timestamp': '14:00:00',
+          'timeline': '14:00:00',
           'cyclists': '70',
           'weather': '26',
           'weather_details': 'no rain',
           'date': '2014-08-02'
         }, {
-          'timestamp': '15:00:00',
+          'timeline': '15:00:00',
           'cyclists': '66',
           'weather': '26',
           'weather_details': 'no rain',
           'date': '2014-08-02'
         }, {
-          'timestamp': '16:00:00',
+          'timeline': '16:00:00',
           'cyclists': '64',
           'weather': '26',
           'weather_details': 'no rain',
           'date': '2014-08-02'
         }, {
-          'timestamp': '17:00:00',
+          'timeline': '17:00:00',
           'cyclists': '49',
           'weather': '26',
           'weather_details': 'no rain',
           'date': '2014-08-02'
         }, {
-          'timestamp': '18:00:00',
+          'timeline': '18:00:00',
           'cyclists': '56',
           'weather': '26',
           'weather_details': 'no rain',
           'date': '2014-08-02'
         }, {
-          'timestamp': '19:00:00',
+          'timeline': '19:00:00',
           'cyclists': '35',
           'weather': '26',
           'weather_details': 'no rain',
           'date': '2014-08-02'
         }, {
-          'timestamp': '20:00:00',
+          'timeline': '20:00:00',
           'cyclists': '16',
           'weather': '26',
           'weather_details': 'no rain',
           'date': '2014-08-02'
         }, {
-          'timestamp': '21:00:00',
+          'timeline': '21:00:00',
           'cyclists': '24',
           'weather': '26',
           'weather_details': 'no rain',
           'date': '2014-08-02'
         }, {
-          'timestamp': '22:00:00',
+          'timeline': '22:00:00',
           'cyclists': '14',
           'weather': '26',
           'weather_details': 'no rain',
           'date': '2014-08-02'
         }, {
-          'timestamp': '23:00:00',
+          'timeline': '23:00:00',
           'cyclists': '11',
           'weather': '26',
           'weather_details': 'no rain',
@@ -302,6 +302,10 @@ export default {
         }
       ]
     }
+  },
+  created () {
+    // this.bikeSampleData = require('src/assets/sample_data/toronto_bike_data.json')
+    // console.log(this.bikeData)
   },
   mounted () {
     this.makeChart()
@@ -311,7 +315,6 @@ export default {
 
     },
     makeChart: function () {
-      console.log(window.d3)
       var d3 = window.d3
 
       // Set the dimensions of the canvas / graph
@@ -333,7 +336,7 @@ export default {
 
       // Define the line
       var cyclistsLine = d3.line()
-          .x(function (d) { return x(d.timestamp) })
+          .x(function (d) { return x(d.timeline) })
           .y(function (d) { return y(d.cyclists) })
 
       // Adds the svg canvas
@@ -345,13 +348,16 @@ export default {
               .attr('transform',
                     'translate(' + margin.left + ',' + margin.top + ')')
 
+      // Call to JSON file to grab sample toronto bike data
+
+      // Format JSON data for the line chart
       this.bikeSampleData.forEach(function (d) {
-        d.timestamp = parseDate(d.timestamp)
+        d.timeline = parseDate(d.timeline)
         d.cyclists = +d.cyclists
       })
 
       // Scale the range of the data
-      x.domain(d3.extent(this.bikeSampleData, function (d) { return d.timestamp }))
+      x.domain(d3.extent(this.bikeSampleData, function (d) { return d.timeline }))
       y.domain([0, d3.max(this.bikeSampleData, function (d) { return d.cyclists })])
 
       // Nest the entries by symbol
@@ -362,8 +368,9 @@ export default {
       // set the colour scale
       var color = d3.scaleOrdinal(d3.schemeCategory10)
 
-      // Loop through each symbol / key
+      // Loop through each value / key
       dataNest.forEach(function (d, i) {
+        console.log(d)
         svg.append('path')
             .attr('class', 'line')
             .style('stroke', function () { // Add the colours dynamically
@@ -375,27 +382,27 @@ export default {
 
         var y = i * legendSpacing // Set the Y value of the legend for each data set
 
-        var legendDate = new Date(d.key)
-        legendDate.setDate(legendDate.getDate() + 1)
+        var legendDate = new Date(d.key)// Get a date object with the date from the current key
+        legendDate.setDate(legendDate.getDate() + 1)// The data is one day off for some reason so we add an extra day.
 
-        legend = svg.append('g')
+        legend = svg.append('g')// Create a g within the legend and assign it a position
            .attr('class', 'legend')
            .attr('transform', 'translate(' + legendX + ',' + y + ')')
 
-        legend.append('rect')
+        legend.append('rect')// Create a rectangle within the legend
           .attr('x', width - 18)
           .attr('y', 18)
           .attr('width', 18)
           .attr('height', 18)
-          .style('fill', d.color)
+          .style('fill', d.color)// Assign the rectangle the colour of the line it's assoicated with
 
-        legend.append('text')
+        legend.append('text')// Create a text within the legend
           .style('font', '14px Roboto')
           .attr('x', width - 24)
           .attr('y', 25)
           .attr('dy', '.35em')
           .style('text-anchor', 'end')
-          .text(formatDate(legendDate))
+          .text(formatDate(legendDate))// Assign the legendDate which will correlate to the current key and rectangle
       })
 
       // Add the X Axis
@@ -403,7 +410,7 @@ export default {
           .attr('class', 'axis')
           .attr('transform', 'translate(0,' + height + ')')
           .style('font', '11px Roboto')
-          .call(d3.axisBottom(x).ticks(d3.timeHour, 1).tickFormat(d3.timeFormat('%-I %p')))
+          .call(d3.axisBottom(x).ticks(d3.timeHour, 1).tickFormat(d3.timeFormat('%-I %p')))// Adjust the time format in the X Axis
 
       // text label for the x axis
       svg.append('text')
