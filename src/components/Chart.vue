@@ -6,7 +6,6 @@
 <script>
 export default {
   name: 'chart',
-  props: ['bikeData'],
   data () {
     return {
       bikeSampleData: [
@@ -304,15 +303,24 @@ export default {
     }
   },
   created () {
-    // this.bikeSampleData = require('src/assets/sample_data/toronto_bike_data.json')
-    // console.log(this.bikeData)
+
   },
   mounted () {
-    this.makeChart()
+    this.getSampleBikes()
   },
   methods: {
     formatData: function () {
-
+      window.alert('test')
+    },
+    getSampleBikes: function () {
+      this.$http.get('/static/sample_data/toronto_bike_data.json')
+        .then(function (data) {
+          this.bikeSampleData = data.body // Grab bike data from response
+          this.makeChart()
+        })
+        .catch(function (error) {
+          console.log(error)
+        })
     },
     makeChart: function () {
       var d3 = window.d3

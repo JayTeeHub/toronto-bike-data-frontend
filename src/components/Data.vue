@@ -22,8 +22,6 @@ export default {
     }
   },
   created: function () {
-    this.bikes = require('src/assets/sample_data/toronto_bike_data.json')
-    // this.getAllBikes()
   },
   filters: {
     capitalize: function (value) {
@@ -49,22 +47,6 @@ export default {
     },
     nameChange: function () {
       this.fullName = 'John Doe'
-    },
-    getAllBikes: function () {
-      this.$http.get('http://localhost:3000/bikes')
-        .then(function (data) {
-          this.arrToObj(data.body)
-        })
-        .catch(function (error) {
-          console.log(error)
-        })
-    },
-    arrToObj: function (data, callback) {
-      var rv = {}
-      for (var i = 0; i < data.length; ++i) {
-        rv[i] = data[i]
-      }
-      this.bikes = rv
     }
   },
   computed: {
