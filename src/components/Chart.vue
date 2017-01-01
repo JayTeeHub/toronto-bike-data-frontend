@@ -316,7 +316,7 @@ export default {
       this.$http.get('/static/sample_data/toronto_bike_data.json')
         .then(function (data) {
           this.bikeSampleData = data.body // Grab bike data from response
-          this.makeChart()
+          this.makeChart()// Render the D3 Chart
         })
         .catch(function (error) {
           console.log(error)
