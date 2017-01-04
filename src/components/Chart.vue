@@ -30,6 +30,7 @@ export default {
         .catch(function (error) {
           console.log(error)
         })
+      this.makeChart()// Render the D3 Chart
     },
     makeChart: function () {
       var d3 = window.d3
