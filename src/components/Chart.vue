@@ -29,12 +29,11 @@ export default {
         .then(function (data) {
           this.bikeSampleData = data.body // Grab bike data from response
           this.makeLineChart()// Render the D3 Chart
+          this.makeBarGraph()// Render D3JS Bar Graph
         })
         .catch(function (error) {
           console.log(error)
         })
-      // this.makeLineChart()// Render the D3 Chart
-      // this.makeBarGraph()// Render D3JS Bar Graph
     },
     makeBarGraph: function () {
       var d3 = window.d3
