@@ -12,7 +12,7 @@
         </div>
         <div class="mdl-card__supporting-text">
         The purpose of visualizing this data is to help better understand the amount of bike traffic the City of Toronto
-        has on its roads, when it occurs the most, and where it occurs the most.
+        has on its roads, when it occurs the most, and where it occurs the most. Check out the visualization below.
         </div>
         <div class="mdl-card__actions mdl-card--border">
           <router-link class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" to="/data">
