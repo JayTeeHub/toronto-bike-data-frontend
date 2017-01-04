@@ -1,292 +1,1178 @@
 [
   {
-    "timeline": "00:00:00",
-    "cyclists": "5",
-    "weather": "27",
-    "weather_details": "no rain",
-    "date": "2014-08-01"
-  }, {
-    "timeline": "01:00:00",
-    "cyclists": "3",
-    "weather": "27",
-    "weather_details": "no rain",
-    "date": "2014-08-01"
-  }, {
-    "timeline": "02:00:00",
-    "cyclists": "5",
-    "weather": "27",
-    "weather_details": "no rain",
-    "date": "2014-08-01"
-  }, {
-    "timeline": "03:00:00",
-    "cyclists": "1",
-    "weather": "27",
-    "weather_details": "no rain",
-    "date": "2014-08-01"
-  }, {
-    "timeline": "04:00:00",
-    "cyclists": "4",
-    "weather": "27",
-    "weather_details": "no rain",
-    "date": "2014-08-01"
-  }, {
-    "timeline": "05:00:00",
-    "cyclists": "7",
-    "weather": "27",
-    "weather_details": "no rain",
-    "date": "2014-08-01"
-  }, {
-    "timeline": "06:00:00",
-    "cyclists": "19",
-    "weather": "27",
-    "weather_details": "no rain",
-    "date": "2014-08-01"
-  }, {
-    "timeline": "07:00:00",
-    "cyclists": "67",
-    "weather": "27",
-    "weather_details": "no rain",
-    "date": "2014-08-01"
-  }, {
-    "timeline": "08:00:00",
-    "cyclists": "250",
-    "weather": "27",
-    "weather_details": "no rain",
-    "date": "2014-08-01"
-  }, {
-    "timeline": "09:00:00",
-    "cyclists": "226",
-    "weather": "27",
-    "weather_details": "no rain",
-    "date": "2014-08-01"
-  }, {
-    "timeline": "10:00:00",
-    "cyclists": "89",
-    "weather": "27",
-    "weather_details": "no rain",
-    "date": "2014-08-01"
-  }, {
-    "timeline": "11:00:00",
-    "cyclists": "67",
-    "weather": "27",
-    "weather_details": "no rain",
-    "date": "2014-08-01"
-  }, {
-    "timeline": "12:00:00",
-    "cyclists": "71",
-    "weather": "27",
-    "weather_details": "no rain",
-    "date": "2014-08-01"
-  }, {
-    "timeline": "13:00:00",
-    "cyclists": "71",
-    "weather": "27",
-    "weather_details": "no rain",
-    "date": "2014-08-01"
-  }, {
-    "timeline": "14:00:00",
-    "cyclists": "77",
-    "weather": "27",
-    "weather_details": "no rain",
-    "date": "2014-08-01"
-  }, {
-    "timeline": "15:00:00",
-    "cyclists": "59",
-    "weather": "27",
-    "weather_details": "no rain",
-    "date": "2014-08-01"
-  }, {
-    "timeline": "16:00:00",
-    "cyclists": "62",
-    "weather": "27",
-    "weather_details": "no rain",
-    "date": "2014-08-01"
-  }, {
-    "timeline": "17:00:00",
-    "cyclists": "60",
-    "weather": "27",
-    "weather_details": "no rain",
-    "date": "2014-08-01"
-  }, {
-    "timeline": "18:00:00",
-    "cyclists": "44",
-    "weather": "27",
-    "weather_details": "no rain",
-    "date": "2014-08-01"
-  }, {
-    "timeline": "19:00:00",
-    "cyclists": "41",
-    "weather": "27",
-    "weather_details": "no rain",
-    "date": "2014-08-01"
-  }, {
-    "timeline": "20:00:00",
-    "cyclists": "15",
-    "weather": "27",
-    "weather_details": "no rain",
-    "date": "2014-08-01"
-  }, {
-    "timeline": "21:00:00",
-    "cyclists": "30",
-    "weather": "27",
-    "weather_details": "no rain",
-    "date": "2014-08-01"
-  }, {
-    "timeline": "22:00:00",
-    "cyclists": "15",
-    "weather": "27",
-    "weather_details": "no rain",
-    "date": "2014-08-01"
-  }, {
-    "timeline": "23:00:00",
-    "cyclists": "16",
-    "weather": "27",
-    "weather_details": "no rain",
-    "date": "2014-08-01"
+    "date": "8/1/14",
+    "timestamp": "00:00:00",
+    "cyclists": 5,
+    "weather": 27,
+    "weather_details": "no rain"
   },
   {
-    "timeline": "00:00:00",
-    "cyclists": "14",
-    "weather": "26",
-    "weather_details": "no rain",
-    "date": "2014-08-02"
-  }, {
-    "timeline": "01:00:00",
-    "cyclists": "12",
-    "weather": "26",
-    "weather_details": "no rain",
-    "date": "2014-08-02"
-  }, {
-    "timeline": "02:00:00",
-    "cyclists": "3",
-    "weather": "26",
-    "weather_details": "no rain",
-    "date": "2014-08-02"
-  }, {
-    "timeline": "03:00:00",
-    "cyclists": "6",
-    "weather": "26",
-    "weather_details": "no rain",
-    "date": "2014-08-02"
-  }, {
-    "timeline": "04:00:00",
-    "cyclists": "3",
-    "weather": "26",
-    "weather_details": "no rain",
-    "date": "2014-08-02"
-  }, {
-    "timeline": "05:00:00",
-    "cyclists": "3",
-    "weather": "26",
-    "weather_details": "no rain",
-    "date": "2014-08-02"
-  }, {
-    "timeline": "06:00:00",
-    "cyclists": "5",
-    "weather": "26",
-    "weather_details": "no rain",
-    "date": "2014-08-02"
-  }, {
-    "timeline": "07:00:00",
-    "cyclists": "11",
-    "weather": "26",
-    "weather_details": "no rain",
-    "date": "2014-08-02"
-  }, {
-    "timeline": "08:00:00",
-    "cyclists": "20",
-    "weather": "26",
-    "weather_details": "no rain",
-    "date": "2014-08-02"
-  }, {
-    "timeline": "09:00:00",
-    "cyclists": "38",
-    "weather": "26",
-    "weather_details": "no rain",
-    "date": "2014-08-02"
-  }, {
-    "timeline": "10:00:00",
-    "cyclists": "39",
-    "weather": "26",
-    "weather_details": "no rain",
-    "date": "2014-08-02"
-  }, {
-    "timeline": "11:00:00",
-    "cyclists": "45",
-    "weather": "26",
-    "weather_details": "no rain",
-    "date": "2014-08-02"
-  }, {
-    "timeline": "12:00:00",
-    "cyclists": "44",
-    "weather": "26",
-    "weather_details": "no rain",
-    "date": "2014-08-02"
-  }, {
-    "timeline": "13:00:00",
-    "cyclists": "51",
-    "weather": "26",
-    "weather_details": "no rain",
-    "date": "2014-08-02"
-  }, {
-    "timeline": "14:00:00",
-    "cyclists": "70",
-    "weather": "26",
-    "weather_details": "no rain",
-    "date": "2014-08-02"
-  }, {
-    "timeline": "15:00:00",
-    "cyclists": "66",
-    "weather": "26",
-    "weather_details": "no rain",
-    "date": "2014-08-02"
-  }, {
-    "timeline": "16:00:00",
-    "cyclists": "64",
-    "weather": "26",
-    "weather_details": "no rain",
-    "date": "2014-08-02"
-  }, {
-    "timeline": "17:00:00",
-    "cyclists": "49",
-    "weather": "26",
-    "weather_details": "no rain",
-    "date": "2014-08-02"
-  }, {
-    "timeline": "18:00:00",
-    "cyclists": "56",
-    "weather": "26",
-    "weather_details": "no rain",
-    "date": "2014-08-02"
-  }, {
-    "timeline": "19:00:00",
-    "cyclists": "35",
-    "weather": "26",
-    "weather_details": "no rain",
-    "date": "2014-08-02"
-  }, {
-    "timeline": "20:00:00",
-    "cyclists": "16",
-    "weather": "26",
-    "weather_details": "no rain",
-    "date": "2014-08-02"
-  }, {
-    "timeline": "21:00:00",
-    "cyclists": "24",
-    "weather": "26",
-    "weather_details": "no rain",
-    "date": "2014-08-02"
-  }, {
-    "timeline": "22:00:00",
-    "cyclists": "14",
-    "weather": "26",
-    "weather_details": "no rain",
-    "date": "2014-08-02"
-  }, {
-    "timeline": "23:00:00",
-    "cyclists": "11",
-    "weather": "26",
-    "weather_details": "no rain",
-    "date": "2014-08-02"
+    "date": "8/1/14",
+    "timestamp": "01:00:00",
+    "cyclists": 3,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/1/14",
+    "timestamp": "02:00:00",
+    "cyclists": 5,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/1/14",
+    "timestamp": "03:00:00",
+    "cyclists": 1,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/1/14",
+    "timestamp": "04:00:00",
+    "cyclists": 4,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/1/14",
+    "timestamp": "05:00:00",
+    "cyclists": 7,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/1/14",
+    "timestamp": "06:00:00",
+    "cyclists": 19,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/1/14",
+    "timestamp": "07:00:00",
+    "cyclists": 67,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/1/14",
+    "timestamp": "08:00:00",
+    "cyclists": 250,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/1/14",
+    "timestamp": "09:00:00",
+    "cyclists": 226,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/1/14",
+    "timestamp": "10:00:00",
+    "cyclists": 89,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/1/14",
+    "timestamp": "11:00:00",
+    "cyclists": 67,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/1/14",
+    "timestamp": "12:00:00",
+    "cyclists": 71,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/1/14",
+    "timestamp": "13:00:00",
+    "cyclists": 71,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/1/14",
+    "timestamp": "14:00:00",
+    "cyclists": 77,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/1/14",
+    "timestamp": "15:00:00",
+    "cyclists": 59,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/1/14",
+    "timestamp": "16:00:00",
+    "cyclists": 62,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/1/14",
+    "timestamp": "17:00:00",
+    "cyclists": 60,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/1/14",
+    "timestamp": "18:00:00",
+    "cyclists": 44,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/1/14",
+    "timestamp": "19:00:00",
+    "cyclists": 41,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/1/14",
+    "timestamp": "20:00:00",
+    "cyclists": 15,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/1/14",
+    "timestamp": "21:00:00",
+    "cyclists": 30,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/1/14",
+    "timestamp": "22:00:00",
+    "cyclists": 15,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/1/14",
+    "timestamp": "23:00:00",
+    "cyclists": 16,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/2/14",
+    "timestamp": "00:00:00",
+    "cyclists": 14,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/2/14",
+    "timestamp": "01:00:00",
+    "cyclists": 12,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/2/14",
+    "timestamp": "02:00:00",
+    "cyclists": 3,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/2/14",
+    "timestamp": "03:00:00",
+    "cyclists": 6,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/2/14",
+    "timestamp": "04:00:00",
+    "cyclists": 3,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/2/14",
+    "timestamp": "05:00:00",
+    "cyclists": 3,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/2/14",
+    "timestamp": "06:00:00",
+    "cyclists": 5,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/2/14",
+    "timestamp": "07:00:00",
+    "cyclists": 11,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/2/14",
+    "timestamp": "08:00:00",
+    "cyclists": 20,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/2/14",
+    "timestamp": "09:00:00",
+    "cyclists": 38,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/2/14",
+    "timestamp": "10:00:00",
+    "cyclists": 39,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/2/14",
+    "timestamp": "11:00:00",
+    "cyclists": 45,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/2/14",
+    "timestamp": "12:00:00",
+    "cyclists": 44,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/2/14",
+    "timestamp": "13:00:00",
+    "cyclists": 51,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/2/14",
+    "timestamp": "14:00:00",
+    "cyclists": 70,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/2/14",
+    "timestamp": "15:00:00",
+    "cyclists": 66,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/2/14",
+    "timestamp": "16:00:00",
+    "cyclists": 64,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/2/14",
+    "timestamp": "17:00:00",
+    "cyclists": 49,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/2/14",
+    "timestamp": "18:00:00",
+    "cyclists": 56,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/2/14",
+    "timestamp": "19:00:00",
+    "cyclists": 35,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/2/14",
+    "timestamp": "20:00:00",
+    "cyclists": 16,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/2/14",
+    "timestamp": "21:00:00",
+    "cyclists": 24,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/2/14",
+    "timestamp": "22:00:00",
+    "cyclists": 14,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/2/14",
+    "timestamp": "23:00:00",
+    "cyclists": 11,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/3/14",
+    "timestamp": "00:00:00",
+    "cyclists": 6,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/3/14",
+    "timestamp": "01:00:00",
+    "cyclists": 9,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/3/14",
+    "timestamp": "02:00:00",
+    "cyclists": 3,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/3/14",
+    "timestamp": "03:00:00",
+    "cyclists": 5,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/3/14",
+    "timestamp": "04:00:00",
+    "cyclists": 0,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/3/14",
+    "timestamp": "05:00:00",
+    "cyclists": 2,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/3/14",
+    "timestamp": "06:00:00",
+    "cyclists": 7,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/3/14",
+    "timestamp": "07:00:00",
+    "cyclists": 13,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/3/14",
+    "timestamp": "08:00:00",
+    "cyclists": 13,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/3/14",
+    "timestamp": "09:00:00",
+    "cyclists": 20,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/3/14",
+    "timestamp": "10:00:00",
+    "cyclists": 40,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/3/14",
+    "timestamp": "11:00:00",
+    "cyclists": 40,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/3/14",
+    "timestamp": "12:00:00",
+    "cyclists": 43,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/3/14",
+    "timestamp": "13:00:00",
+    "cyclists": 52,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/3/14",
+    "timestamp": "14:00:00",
+    "cyclists": 51,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/3/14",
+    "timestamp": "15:00:00",
+    "cyclists": 58,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/3/14",
+    "timestamp": "16:00:00",
+    "cyclists": 48,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/3/14",
+    "timestamp": "17:00:00",
+    "cyclists": 39,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/3/14",
+    "timestamp": "18:00:00",
+    "cyclists": 34,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/3/14",
+    "timestamp": "19:00:00",
+    "cyclists": 35,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/3/14",
+    "timestamp": "20:00:00",
+    "cyclists": 25,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/3/14",
+    "timestamp": "21:00:00",
+    "cyclists": 17,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/3/14",
+    "timestamp": "22:00:00",
+    "cyclists": 6,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/3/14",
+    "timestamp": "23:00:00",
+    "cyclists": 12,
+    "weather": 27,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/4/14",
+    "timestamp": "00:00:00",
+    "cyclists": 9,
+    "weather": 27,
+    "weather_details": "2mm rain"
+  },
+  {
+    "date": "8/4/14",
+    "timestamp": "01:00:00",
+    "cyclists": 8,
+    "weather": 27,
+    "weather_details": "2mm rain"
+  },
+  {
+    "date": "8/4/14",
+    "timestamp": "02:00:00",
+    "cyclists": 0,
+    "weather": 27,
+    "weather_details": "2mm rain"
+  },
+  {
+    "date": "8/4/14",
+    "timestamp": "03:00:00",
+    "cyclists": 4,
+    "weather": 27,
+    "weather_details": "2mm rain"
+  },
+  {
+    "date": "8/4/14",
+    "timestamp": "04:00:00",
+    "cyclists": 2,
+    "weather": 27,
+    "weather_details": "2mm rain"
+  },
+  {
+    "date": "8/4/14",
+    "timestamp": "05:00:00",
+    "cyclists": 2,
+    "weather": 27,
+    "weather_details": "2mm rain"
+  },
+  {
+    "date": "8/4/14",
+    "timestamp": "06:00:00",
+    "cyclists": 3,
+    "weather": 27,
+    "weather_details": "2mm rain"
+  },
+  {
+    "date": "8/4/14",
+    "timestamp": "07:00:00",
+    "cyclists": 14,
+    "weather": 27,
+    "weather_details": "2mm rain"
+  },
+  {
+    "date": "8/4/14",
+    "timestamp": "08:00:00",
+    "cyclists": 20,
+    "weather": 27,
+    "weather_details": "2mm rain"
+  },
+  {
+    "date": "8/4/14",
+    "timestamp": "09:00:00",
+    "cyclists": 29,
+    "weather": 27,
+    "weather_details": "2mm rain"
+  },
+  {
+    "date": "8/4/14",
+    "timestamp": "10:00:00",
+    "cyclists": 36,
+    "weather": 27,
+    "weather_details": "2mm rain"
+  },
+  {
+    "date": "8/4/14",
+    "timestamp": "11:00:00",
+    "cyclists": 52,
+    "weather": 27,
+    "weather_details": "2mm rain"
+  },
+  {
+    "date": "8/4/14",
+    "timestamp": "12:00:00",
+    "cyclists": 55,
+    "weather": 27,
+    "weather_details": "2mm rain"
+  },
+  {
+    "date": "8/4/14",
+    "timestamp": "13:00:00",
+    "cyclists": 63,
+    "weather": 27,
+    "weather_details": "2mm rain"
+  },
+  {
+    "date": "8/4/14",
+    "timestamp": "14:00:00",
+    "cyclists": 42,
+    "weather": 27,
+    "weather_details": "2mm rain"
+  },
+  {
+    "date": "8/4/14",
+    "timestamp": "15:00:00",
+    "cyclists": 44,
+    "weather": 27,
+    "weather_details": "2mm rain"
+  },
+  {
+    "date": "8/4/14",
+    "timestamp": "16:00:00",
+    "cyclists": 31,
+    "weather": 27,
+    "weather_details": "2mm rain"
+  },
+  {
+    "date": "8/4/14",
+    "timestamp": "17:00:00",
+    "cyclists": 25,
+    "weather": 27,
+    "weather_details": "2mm rain"
+  },
+  {
+    "date": "8/4/14",
+    "timestamp": "18:00:00",
+    "cyclists": 26,
+    "weather": 27,
+    "weather_details": "2mm rain"
+  },
+  {
+    "date": "8/4/14",
+    "timestamp": "19:00:00",
+    "cyclists": 24,
+    "weather": 27,
+    "weather_details": "2mm rain"
+  },
+  {
+    "date": "8/4/14",
+    "timestamp": "20:00:00",
+    "cyclists": 16,
+    "weather": 27,
+    "weather_details": "2mm rain"
+  },
+  {
+    "date": "8/4/14",
+    "timestamp": "21:00:00",
+    "cyclists": 16,
+    "weather": 27,
+    "weather_details": "2mm rain"
+  },
+  {
+    "date": "8/4/14",
+    "timestamp": "22:00:00",
+    "cyclists": 10,
+    "weather": 27,
+    "weather_details": "2mm rain"
+  },
+  {
+    "date": "8/4/14",
+    "timestamp": "23:00:00",
+    "cyclists": 5,
+    "weather": 27,
+    "weather_details": "2mm rain"
+  },
+  {
+    "date": "8/5/14",
+    "timestamp": "00:00:00",
+    "cyclists": 4,
+    "weather": 24,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/5/14",
+    "timestamp": "01:00:00",
+    "cyclists": 5,
+    "weather": 24,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/5/14",
+    "timestamp": "02:00:00",
+    "cyclists": 0,
+    "weather": 24,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/5/14",
+    "timestamp": "03:00:00",
+    "cyclists": 1,
+    "weather": 24,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/5/14",
+    "timestamp": "04:00:00",
+    "cyclists": 3,
+    "weather": 24,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/5/14",
+    "timestamp": "05:00:00",
+    "cyclists": 13,
+    "weather": 24,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/5/14",
+    "timestamp": "06:00:00",
+    "cyclists": 28,
+    "weather": 24,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/5/14",
+    "timestamp": "07:00:00",
+    "cyclists": 77,
+    "weather": 24,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/5/14",
+    "timestamp": "08:00:00",
+    "cyclists": 258,
+    "weather": 24,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/5/14",
+    "timestamp": "09:00:00",
+    "cyclists": 225,
+    "weather": 24,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/5/14",
+    "timestamp": "10:00:00",
+    "cyclists": 76,
+    "weather": 24,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/5/14",
+    "timestamp": "11:00:00",
+    "cyclists": 41,
+    "weather": 24,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/5/14",
+    "timestamp": "12:00:00",
+    "cyclists": 40,
+    "weather": 24,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/5/14",
+    "timestamp": "13:00:00",
+    "cyclists": 45,
+    "weather": 24,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/5/14",
+    "timestamp": "14:00:00",
+    "cyclists": 36,
+    "weather": 24,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/5/14",
+    "timestamp": "15:00:00",
+    "cyclists": 48,
+    "weather": 24,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/5/14",
+    "timestamp": "16:00:00",
+    "cyclists": 46,
+    "weather": 24,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/5/14",
+    "timestamp": "17:00:00",
+    "cyclists": 90,
+    "weather": 24,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/5/14",
+    "timestamp": "18:00:00",
+    "cyclists": 97,
+    "weather": 24,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/5/14",
+    "timestamp": "19:00:00",
+    "cyclists": 51,
+    "weather": 24,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/5/14",
+    "timestamp": "20:00:00",
+    "cyclists": 48,
+    "weather": 24,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/5/14",
+    "timestamp": "21:00:00",
+    "cyclists": 37,
+    "weather": 24,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/5/14",
+    "timestamp": "22:00:00",
+    "cyclists": 23,
+    "weather": 24,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/5/14",
+    "timestamp": "23:00:00",
+    "cyclists": 16,
+    "weather": 24,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/6/14",
+    "timestamp": "00:00:00",
+    "cyclists": 5,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/6/14",
+    "timestamp": "01:00:00",
+    "cyclists": 2,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/6/14",
+    "timestamp": "02:00:00",
+    "cyclists": 0,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/6/14",
+    "timestamp": "03:00:00",
+    "cyclists": 3,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/6/14",
+    "timestamp": "04:00:00",
+    "cyclists": 2,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/6/14",
+    "timestamp": "05:00:00",
+    "cyclists": 12,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/6/14",
+    "timestamp": "06:00:00",
+    "cyclists": 33,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/6/14",
+    "timestamp": "07:00:00",
+    "cyclists": 99,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/6/14",
+    "timestamp": "08:00:00",
+    "cyclists": 354,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/6/14",
+    "timestamp": "09:00:00",
+    "cyclists": 254,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/6/14",
+    "timestamp": "10:00:00",
+    "cyclists": 72,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/6/14",
+    "timestamp": "11:00:00",
+    "cyclists": 47,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/6/14",
+    "timestamp": "12:00:00",
+    "cyclists": 53,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/6/14",
+    "timestamp": "13:00:00",
+    "cyclists": 100,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/6/14",
+    "timestamp": "14:00:00",
+    "cyclists": 98,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/6/14",
+    "timestamp": "15:00:00",
+    "cyclists": 96,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/6/14",
+    "timestamp": "16:00:00",
+    "cyclists": 66,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/6/14",
+    "timestamp": "17:00:00",
+    "cyclists": 131,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/6/14",
+    "timestamp": "18:00:00",
+    "cyclists": 75,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/6/14",
+    "timestamp": "19:00:00",
+    "cyclists": 73,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/6/14",
+    "timestamp": "20:00:00",
+    "cyclists": 41,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/6/14",
+    "timestamp": "21:00:00",
+    "cyclists": 38,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/6/14",
+    "timestamp": "22:00:00",
+    "cyclists": 22,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/6/14",
+    "timestamp": "23:00:00",
+    "cyclists": 17,
+    "weather": 26,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/7/14",
+    "timestamp": "00:00:00",
+    "cyclists": 3,
+    "weather": 25,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/7/14",
+    "timestamp": "01:00:00",
+    "cyclists": 3,
+    "weather": 25,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/7/14",
+    "timestamp": "02:00:00",
+    "cyclists": 1,
+    "weather": 25,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/7/14",
+    "timestamp": "03:00:00",
+    "cyclists": 2,
+    "weather": 25,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/7/14",
+    "timestamp": "04:00:00",
+    "cyclists": 3,
+    "weather": 25,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/7/14",
+    "timestamp": "05:00:00",
+    "cyclists": 11,
+    "weather": 25,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/7/14",
+    "timestamp": "06:00:00",
+    "cyclists": 31,
+    "weather": 25,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/7/14",
+    "timestamp": "07:00:00",
+    "cyclists": 98,
+    "weather": 25,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/7/14",
+    "timestamp": "08:00:00",
+    "cyclists": 324,
+    "weather": 25,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/7/14",
+    "timestamp": "09:00:00",
+    "cyclists": 267,
+    "weather": 25,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/7/14",
+    "timestamp": "10:00:00",
+    "cyclists": 71,
+    "weather": 25,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/7/14",
+    "timestamp": "11:00:00",
+    "cyclists": 74,
+    "weather": 25,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/7/14",
+    "timestamp": "12:00:00",
+    "cyclists": 62,
+    "weather": 25,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/7/14",
+    "timestamp": "13:00:00",
+    "cyclists": 72,
+    "weather": 25,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/7/14",
+    "timestamp": "14:00:00",
+    "cyclists": 53,
+    "weather": 25,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/7/14",
+    "timestamp": "15:00:00",
+    "cyclists": 66,
+    "weather": 25,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/7/14",
+    "timestamp": "16:00:00",
+    "cyclists": 55,
+    "weather": 25,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/7/14",
+    "timestamp": "17:00:00",
+    "cyclists": 94,
+    "weather": 25,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/7/14",
+    "timestamp": "18:00:00",
+    "cyclists": 95,
+    "weather": 25,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/7/14",
+    "timestamp": "19:00:00",
+    "cyclists": 47,
+    "weather": 25,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/7/14",
+    "timestamp": "20:00:00",
+    "cyclists": 39,
+    "weather": 25,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/7/14",
+    "timestamp": "21:00:00",
+    "cyclists": 15,
+    "weather": 25,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/7/14",
+    "timestamp": "22:00:00",
+    "cyclists": 8,
+    "weather": 25,
+    "weather_details": "no rain"
+  },
+  {
+    "date": "8/7/14",
+    "timestamp": "23:00:00",
+    "cyclists": 9,
+    "weather": 25,
+    "weather_details": "no rain"
   }
 ]
