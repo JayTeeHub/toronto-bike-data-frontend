@@ -7,8 +7,8 @@
         </div>
         <div class="mdl-card__supporting-text">
         This website is dedicated to visualizing bike data supplied by the City of Toronto. Specifically, this website
-          visualizes bicycle traffic throughout the downtown core. It is visualized in two ways; through line charts
-          using D3JS (and soon chartist) and by using a map (coming soon).
+          visualizes bicycle traffic throughout the downtown core. It is visualized in two ways; through charts/graphs
+          using D3JS and by using a map (coming soon).
         </div>
         <div class="mdl-card__supporting-text">
         The purpose of visualizing this data is to help better understand the amount of bike traffic the City of Toronto
@@ -22,12 +22,12 @@
             <i class="material-icons">explore</i>
           </router-link>
         </div>
-        <!--<div class="mdl-card__menu">
+        <div class="mdl-card__menu">
           <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
             <i class="material-icons">share</i>
           </button>
         </div>
-      </div>-->
+      </div>
   </div>
 </template>
 
