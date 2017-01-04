@@ -13,3 +13,7 @@ html, body {
 .ct-chart {
   margin-bottom: 1rem;
 }
+
+.bike-title {
+  font-family: 'Avenir', 'Helvetica', sans-serif;
+}
