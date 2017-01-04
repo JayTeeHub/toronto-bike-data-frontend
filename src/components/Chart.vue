@@ -1,6 +1,9 @@
 <template>
   <!--<div class='ct-chart ct-golden-section chart'></div>-->
-  <svg id='visualization'></svg>
+  <div>
+    <svg id='visualization-line-chart'></svg>
+    <svg id='visualization-bar-graph'></svg>
+  </div>
 </template>
 
 <script>
@@ -19,20 +22,102 @@ export default {
   },
   methods: {
     formatData: function () {
-      window.alert('test')
+
     },
     getSampleBikes: function () {
       this.$http.get('/static/sample_data/toronto_bike_data.json')
         .then(function (data) {
           this.bikeSampleData = data.body // Grab bike data from response
-          this.makeChart()// Render the D3 Chart
+          this.makeLineChart()// Render the D3 Chart
         })
         .catch(function (error) {
           console.log(error)
         })
-      this.makeChart()// Render the D3 Chart
+      // this.makeLineChart()// Render the D3 Chart
+      // this.makeBarGraph()// Render D3JS Bar Graph
     },
-    makeChart: function () {
+    makeBarGraph: function () {
+      var d3 = window.d3
+
+      // Set the dimensions of the canvas / graph
+      var margin = {top: 30, right: 20, bottom: 70, left: 50}
+      var width = 960 - margin.left - margin.right
+      var height = 500 - margin.top - margin.bottom
+
+      // Set the ranges
+      let x = d3.scaleBand()
+          .range([0, width])
+          .padding(0.1)
+      let y = d3.scaleLinear()
+          .range([height, 0])
+
+      // Adds the svg canvas
+      var svg = d3.select('#visualization-bar-graph')
+          .append('svg')
+              .attr('width', width + margin.left + margin.right)
+              .attr('height', height + margin.top + margin.bottom)
+          .append('g')
+              .attr('transform',
+                    'translate(' + margin.left + ',' + margin.top + ')')
+
+      // format the data
+      this.bikeSampleData.forEach(function (d) {
+        d.cyclists = +d.cyclists
+      })
+
+      // Scale the range of the data in the domains
+      x.domain(this.bikeSampleData.map(function (d) { return d.date }))
+      y.domain([0, d3.max(this.bikeSampleData, function (d) { return d.cyclists })])
+
+      // append the rectangles for the bar chart
+      svg.selectAll('.bar')
+          .data(this.bikeSampleData)
+        .enter().append('rect')
+          .attr('class', 'bar')
+          .attr('x', function (d) { return x(d.date) })
+          .attr('width', x.bandwidth())
+          .attr('y', function (d) { return y(d.cyclists) })
+          .attr('height', function (d) { return height - y(d.cyclists) })
+        .style('fill', '#0065a4')
+
+      // add the x Axis
+      svg.append('g')
+          .attr('transform', 'translate(0,' + height + ')')
+          .call(d3.axisBottom(x))
+
+      // text label for the x axis
+      svg.append('text')
+          .attr('transform',
+                'translate(' + (width / 2) + ' ,' +
+                               (height + margin.top + 20) + ')')
+          .style('text-anchor', 'middle')
+          .style('font', '16px Roboto')
+          .text('Dates')
+
+      // add the y Axis
+      svg.append('g')
+          .call(d3.axisLeft(y))
+
+      // text label for the y axis
+      svg.append('text')
+          .attr('transform', 'rotate(-90)')
+          .attr('y', 0 - margin.left)
+          .attr('x', 0 - (height / 2))
+          .attr('dy', '1em')
+          .style('font', '16px Roboto')
+          .style('text-anchor', 'middle')
+          .text('Cyclists')
+
+      // Add title to graph
+      svg.append('text')
+        .attr('x', (width / 2))
+        .attr('y', 0 - (margin.top / 2))
+        .attr('text-anchor', 'middle')
+        .style('font', ' 16px Roboto')
+        .style('text-decoration', 'underline')
+        .text('Number of Cyclists Each Day -- Adelaide & Brant')
+    },
+    makeLineChart: function () {
       var d3 = window.d3
 
       // Set the dimensions of the canvas / graph
@@ -54,11 +139,11 @@ export default {
 
       // Define the line
       var cyclistsLine = d3.line()
-          .x(function (d) { return x(d.timeline) })
+          .x(function (d) { return x(d.timestamp) })
           .y(function (d) { return y(d.cyclists) })
 
       // Adds the svg canvas
-      var svg = d3.select('#visualization')
+      var svg = d3.select('#visualization-line-chart')
           .append('svg')
               .attr('width', width + margin.left + margin.right)
               .attr('height', height + margin.top + margin.bottom)
@@ -66,16 +151,14 @@ export default {
               .attr('transform',
                     'translate(' + margin.left + ',' + margin.top + ')')
 
-      // Call to JSON file to grab sample toronto bike data
-
       // Format JSON data for the line chart
       this.bikeSampleData.forEach(function (d) {
-        d.timeline = parseDate(d.timeline)
+        d.timestamp = parseDate(d.timestamp)
         d.cyclists = +d.cyclists
       })
 
       // Scale the range of the data
-      x.domain(d3.extent(this.bikeSampleData, function (d) { return d.timeline }))
+      x.domain(d3.extent(this.bikeSampleData, function (d) { return d.timestamp }))
       y.domain([0, d3.max(this.bikeSampleData, function (d) { return d.cyclists })])
 
       // Nest the entries by symbol
@@ -101,7 +184,7 @@ export default {
         var y = i * legendSpacing // Set the Y value of the legend for each data set
 
         var legendDate = new Date(d.key)// Get a date object with the date from the current key
-        legendDate.setDate(legendDate.getDate() + 1)// The data is one day off for some reason so we add an extra day.
+        legendDate.setDate(legendDate.getDate())// The data is one day off for some reason so we add an extra day.
 
         legend = svg.append('g')// Create a g within the legend and assign it a position
            .attr('class', 'legend')
@@ -168,10 +251,19 @@ export default {
 }
 </script>
 <style scoped>
-  #visualization {
+  #visualization-line-chart {
     height: 500px;
     width: 960px;
   }
+  #visualization-bar-graph {
+    height: 500px;
+    width: 10000px;
+  }
+  svg:last-child{
+    padding-top: 15px;
+  }
+  .bar { fill: #0065a4; }
+
   .axis path {
       fill: none;
       stroke: #777;
