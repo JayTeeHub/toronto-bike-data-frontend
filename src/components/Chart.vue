@@ -1434,7 +1434,7 @@ export default {
   }
   #visualization-bar-graph {
     height: 500px;
-    width: 10000px;
+    width: 960px;
   }
   svg:last-child{
     padding-top: 15px;
