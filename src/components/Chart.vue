@@ -1,16 +1,44 @@
 <template>
   <!--<div class='ct-chart ct-golden-section chart'></div>-->
   <div>
-    <svg id='visualization-line-chart'></svg>
+    <svg id='visualization-line-chart' :width="width" :height="height">
+      <g :style="{transform: `translate(${margin.left}px, ${margin.top}px)`}">
+      </g>
+    </svg>
     <svg id='visualization-bar-graph'></svg>
   </div>
 </template>
-
 <script>
+/* globals window */
+const props = {
+  margin: {
+    type: Object,
+    default: () => ({
+      top: 30,
+      right: 20,
+      bottom: 70,
+      left: 50
+    })
+  }
+}
 export default {
   name: 'chart',
+  props,
   data () {
     return {
+      width: 0,
+      height: 0,
+      scaled: {
+        x: null,
+        y: null
+      },
+      d3: null,
+      formatLineChartDate: null,
+      parseLineChartDate: null,
+      svgLineChart: null,
+      nestedLineChartData: null,
+      cyclistsLine: null,
+      colourLineChart: null,
       bikeSampleData: [
         {
           'date': '8/1/14',
@@ -1191,15 +1219,65 @@ export default {
       ]
     }
   },
-  created () {
-
+  computed: {
+    padded () {
+      const width = this.width - this.margin.left - this.margin.right
+      const height = this.height - this.margin.top - this.margin.bottom
+      return { width, height }
+    }
   },
   mounted () {
-    this.getSampleBikes()
+    // this.getSampleBikes()
+    this.d3 = window.d3// Set d3 library
+    this.parseLineChartDate = this.d3.timeParse('%H:%M:%S')// Parse the date / time for the X axis
+    this.formatLineChartLegendDate = this.d3.timeFormat('%A, %B %-d, %Y')// Used to set how the date will look in the legend
+    this.svgLineChart = this.d3.select('#visualization-line-chart')// Grab line chart svg from DOM
+    window.addEventListener('resize', this.onResize)
+    this.onResize()
+  },
+  beforeDestory () {
+    window.removeEventListener('resize', this.onResize)
+  },
+  watch: {
+    width: function () {
+      this.initialize()
+    }
   },
   methods: {
-    formatData: function () {
+    onResize: function () {
+      console.log('Resizing...')
+      this.width = this.$el.offsetWidth
+      this.height = this.$el.offsetHeight
+      console.log('Resizing compelted!')
+    },
+    initialize: function () {
+      // Set the ranges for the x & y scales
+      this.scaled.x = this.d3.scaleBand().range([0, this.padded.width]).padding(0.1) // Put extra padding on x acess
+      this.scaled.y = this.d3.scaleLinear().range([this.padded.height, 0])
 
+      this.cyclistsLine = this.d3.line()
+        .this.scaled.x(function (d) { return this.scaled.x(d.timestamp) })
+        .this.scaled.y(function (d) { return this.scaled.y(d.cyclists) })
+
+      let parseLineChartDate = this.parseLineChartDate// Pass the instance of the d3 timeParse
+
+      // Format JSON data for the line chart
+      this.bikeSampleData.forEach(function (d) {
+        d.timestamp = parseLineChartDate(d.timestamp)
+        d.cyclists = +d.cyclists
+      })
+
+      // Apply data to the x & y scales
+      this.scaled.x.domain(this.d3.extent(this.bikeSampleData, function (d) { return d.timestamp }))
+      this.scaled.y.domain([0, this.d3.max(this.bikeSampleData, function (d) { return d.cyclists })])
+
+      // Nest the bike sample data by key & entries
+      this.nestedLineChartData = this.d3.nest()
+        .key(function (d) { return d.date })
+        .entries(this.bikeSampleData)
+
+      // set the colour scale
+      this.colourLineChart = this.d3.scaleOrdinal(this.d3.schemeCategory10)
     },
     getSampleBikes: function () {
       this.$http.get('/static/sample_data/toronto_bike_data.json')
@@ -1211,7 +1289,7 @@ export default {
           console.log(error)
         })
       this.makeLineChart()// Render the D3 Chart
-      this.makeBarGraph()// Render D3JS Bar Graph
+      // this.makeBarGraph()// Render D3JS Bar Graph
     },
     makeBarGraph: function () {
       var d3 = window.d3
@@ -1228,6 +1306,8 @@ export default {
       let y = d3.scaleLinear()
           .range([height, 0])
 
+      let formatDate = d3.timeFormat('%A')// Format out the day name only (i.e. Monday)
+
       // Adds the svg canvas
       var svg = d3.select('#visualization-bar-graph')
           .append('svg')
@@ -1239,6 +1319,8 @@ export default {
 
       // format the data
       this.bikeSampleData.forEach(function (d) {
+        d.date = new Date(d.date)
+        d.date = formatDate(d.date)
         d.cyclists = +d.cyclists
       })
 
