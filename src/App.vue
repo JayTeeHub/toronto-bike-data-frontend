@@ -1,9 +1,7 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
+  <div id="app" class="welcome-card">
       <div class="demo-card-wide mdl-card mdl-shadow--2dp">
         <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text">Welcome</h2>
         </div>
         <div class="mdl-card__supporting-text">
         This website is dedicated to visualizing bike data supplied by the City of Toronto. Specifically, this website
@@ -34,6 +32,9 @@
 <style scoped>
   body{
     font-family: 'Avenir', 'Helvetica', sans-serif;
+  }
+  .welcome-card{
+    padding-top: 10%;
   }
   .demo-card-wide.mdl-card {
     width: 600px;
