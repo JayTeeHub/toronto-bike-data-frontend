@@ -1,10 +1,7 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
+  <div id="app" class="welcome-card">
       <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-        <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text">Welcome</h2>
-        </div>
+        <div class="mdl-card__title"></div>
         <div class="mdl-card__supporting-text">
         This website is dedicated to visualizing bike data supplied by the City of Toronto. Specifically, this website
           visualizes bicycle traffic throughout the downtown core. It is visualized in two ways; through charts/graphs
@@ -35,6 +32,9 @@
   body{
     font-family: 'Avenir', 'Helvetica', sans-serif;
   }
+  .welcome-card{
+    padding-top: 10%;
+  }
   .demo-card-wide.mdl-card {
     width: 600px;
     display: table;
@@ -43,7 +43,7 @@
   .demo-card-wide > .mdl-card__title {
     color: #fff;
     height: 176px;
-    background: url('https://getmdl.io/assets/demos/welcome_card.jpg') center / cover;
+    background: url('./assets/nike.png') center / cover;
   }
   .demo-card-wide > .mdl-card__menu {
     color: #fff;
